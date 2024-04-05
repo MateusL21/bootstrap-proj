@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <script data-require="jquery@3.1.1" data-semver="3.1.1"
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="JS/script.js"></script>
+  <script src="JS/javascipt.js"></script>
+  <script src="JS/jquery-3.6.0.min.js"></script>
+  <script src="JS/jquery.mask.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <h1 class="display-5 text-center">Menu faça a sua escolha</h1>
+  <div class="container text-center">
+    <h1 class="display-6">Prato principal</h1>
+    Todos os pratos acompanham arroz, feijão e a sobremesa do dia
+  </div>
+  <!--Cards-->
+  <div class="row justify-content-center gap-5">
+    <div class="card p-0 shadow-lg" style="width: 15rem;">
+      <img src="Images/bife.jpg" class="card-img-top" alt="...">
+      <div class="card-body text-center">
+        <h5 class="card-title">Bife com Batata</h5>
+        <p class="card-text">Valor: R$ 30</p>
+        <div class="quantity buttons_added">
+          <input type="button" value="-" class="btn btn-primary minus" style="width: 35px; height: 35px;">
+          <input type="text" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+            class="input-text qty text" style="width: 25px; height: 25px;">
+          <input type="button" value="+" class="btn btn-primary plus" style="width: 35px; height: 35px;">
+        </div>
+
+      </div>
+    </div>
+    <div class="card p-0 shadow-lg" style="width: 15rem;">
+      <img src="Images/coxa.jpg" class="card-img-top" alt="...">
+      <div class="card-body text-center">
+        <h5 class="card-title">Coxa de Frango</h5>
+        <p class="card-text">Valor: R$ 25</p>
+        <div class="quantity buttons_added">
+          <input type="button" value="-" class="btn btn-primary minus" style="width: 35px; height: 35px;">
+          <input type="text" step="1" min="0" max="" id="2" name="quantity" value="0" title="Qty"
+            class="input-text qty text" style="width: 25px; height: 25px;">
+          <input type="button" value="+" class="btn btn-primary plus" style="width: 35px; height: 35px;">
+        </div>
+      </div>
+    </div>
+    <div class="card p-0 shadow-lg" style="width: 15rem;">
+      <img src="Images/panela.jpg" class="card-img-top" alt="...">
+      <div class="card-body text-center">
+        <h5 class="card-title">Carne de Panela</h5>
+        <p class="card-text">Valor: R$ 22</p>
+        <div class="quantity buttons_added">
+          <input type="button" value="-" class="btn btn-primary minus" style="width: 35px; height: 35px;">
+          <input type="text" step="1" min="0" max="" id="3" name="quantity" value="0" title="Qty"
+            class="input-text qty text" style="width: 25px; height: 25px;">
+          <input type="button" value="+" class="btn btn-primary plus" style="width: 35px; height: 35px;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container text-center">
+    <h1 class="display-6">Acompanhamentos</h1>
+    Porções individuais
+  </div>
+  <div class="row justify-content-center gap-5">
+    <div class="card p-0 shadow-lg" style="width: 15rem;">
+      <img src="Images/farofa.jpg" class="card-img-top" alt="...">
+      <div class="card-body text-center">
+        <h5 class="card-title">Farofa</h5>
+        <p class="card-text">Valor: R$ 10</p>
+        <div class="quantity buttons_added">
+          <input type="button" value="-" class="btn btn-primary minus" style="width: 35px; height: 35px;">
+          <input type="text" step="1" min="0" max="" id="4" name="quantity" value="0" title="Qty"
+            class="input-text qty text" style="width: 25px; height: 25px;">
+          <input type="button" value="+" class="btn btn-primary plus" style="width: 35px; height: 35px;">
+        </div>
+      </div>
+    </div>
+    <div class="card p-0 shadow-lg" style="width: 15rem;">
+      <img src="Images/salad.jpg" class="card-img-top" alt="...">
+      <div class="card-body text-center">
+        <h5 class="card-title">Salada</h5>
+        <p class="card-text">Valor: R$ 8</p>
+        <div class="quantity buttons_added">
+          <input type="button" value="-" class="btn btn-primary minus" style="width: 35px; height: 35px;">
+          <input type="text" step="1" min="0" max="" id="5" name="quantity" value="0" title="Qty"
+            class="input-text qty text" style="width: 25px; height: 25px;">
+          <input type="button" value="+" class="btn btn-primary plus" style="width: 35px; height: 35px;">
+        </div>
+      </div>
+    </div>
+    <div class="card p-0 shadow-lg" style="width: 15rem;">
+      <img src="Images/torresmo.jpg" class="card-img-top" alt="...">
+      <div class="card-body text-center">
+        <h5 class="card-title">Torresmo</h5>
+        <p class="card-text">Valor: R$ 12</p>
+        <div class="quantity buttons_added">
+          <input type="button" value="-" class="btn btn-primary minus" style="width: 35px; height: 35px;">
+          <input type="text" step="1" min="0" max="" id="6" name="quantity" value="0" title="Qty"
+            class="input-text qty text" style="width: 25px; height: 25px;">
+          <input type="button" value="+" class="btn btn-primary plus" style="width: 35px; height: 35px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <h1 class="display-5 text-center mt-3">Dados pessoais</h1>
+  <!--Forms-->
+  <form>
+  <div class="col-12 col-md-8 offset-md-2">
+    <label for="inputNome" class="form-label">Nome</label>
+    <input type="text" class="form-control" id="nomeusuario" placeholder="Nome:">
+  </div>
+  <div class="col-12 col-md-8 offset-md-2">
+    <label for="inputNome" class="form-label">Número</label>
+    <input type="text" class="form-control" id="phone" placeholder="Número:">
+    <script>$("#phone").mask("(99)9 9999-9999");
+    </script>
+  </div>
+  <div class="col-12 col-md-8 offset-md-2">
+    <label for="inputNome" class="form-label">E-mail</label>
+    <input type="text" class="form-control" id="inputEmail" placeholder="E-mail:">
+  </div>
+</form>
+</body>
+</html>
